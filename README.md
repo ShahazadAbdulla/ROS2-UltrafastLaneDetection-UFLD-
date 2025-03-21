@@ -4,6 +4,9 @@ This project wraps the **Ultrafast Lane Detection (UFLD)** model in a fully ROS 
 
 - Processed frames (with lane overlays) via `sensor_msgs/msg/Image`
 - Detected lane coordinates via `std_msgs/msg/String`
+![WhatsApp Image 2025-03-21 at 11 41 47(1)](https://github.com/user-attachments/assets/ee498c72-9ccc-445f-93ce-d550aa957f34)
+
+![WhatsApp Image 2025-03-21 at 11 41 47](https://github.com/user-attachments/assets/450df870-724b-4706-b9c8-9e9f79a52566)
 
 ---
 
@@ -119,8 +122,6 @@ We're in the process of integrating a Stanley Controller to close the loop and c
 This functionality will be released in a new ROS 2 repo soon.
 
 ##📄 License
-
-This project is licensed under the MIT License.
 
 Model, datasets, and core detection logic are licensed under their respective terms from:
 
