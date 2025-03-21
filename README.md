@@ -35,7 +35,7 @@ this includes:
     torch, torchvision, numpy, opencv-python, Pillow, scipy
 ```
 
-##✅ ROS 2 Dependencies
+## ✅ ROS 2 Dependencies
 
 This project is built for ROS 2 Humble. Install required packages:
 sudo apt update
@@ -45,7 +45,7 @@ sudo apt install \
   ros-humble-sensor-msgs \
   ros-humble-std-msgs
 
-##📂 Project Structure
+## 📂 Project Structure
 src/
 ├── ufld_lane_detection/     # Lane detection logic + ROS node
 └── webcam_publisher/        # Publishes webcam frames
@@ -58,7 +58,7 @@ cd Abaja-LKA
 
 2. Download the Pretrained TuSimple Model
 
-##📥 Model link:
+## 📥 Model link:
 Google Drive - tusimple_18.pth
 
 Place the model at:
@@ -79,13 +79,13 @@ Update lane_detection_node.py if your path is different:
 
 self.video_path = "/home/shadow0/Documents/road0.mp4"
 
-###⚙️ Build the ROS Workspace
+### ⚙️ Build the ROS Workspace
 
 source /opt/ros/humble/setup.bash
 colcon build
 source install/setup.bash
 
-###🚀 Running the Nodes
+### 🚀 Running the Nodes
 1. Webcam Publisher (optional)
 
 ros2 run webcam_publisher webcam_publisher_node
@@ -100,7 +100,7 @@ Processes either video file or webcam, and publishes:
     /lane_detection_output – image with detected lanes
     /lane_coordinates – stringified lane coordinates
 
-###📸 Switching Between Video and Webcam Input
+### 📸 Switching Between Video and Webcam Input
 
 In lane_detection_node.py, to switch to webcam:
 
@@ -112,7 +112,7 @@ With:
 
 self.cap = cv2.VideoCapture(0)  # Webcam stream
 
-###🧪 Topics Published
+### 🧪 Topics Published
 Topic	Type	Description
 /lane_detection_output	sensor_msgs/msg/Image	Processed image with lanes overlaid
 /lane_coordinates	std_msgs/msg/String	List of detected lanes and centerline
