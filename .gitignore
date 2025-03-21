@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.swp
+*.bak
+
+# Logs
+*.log
+
+# ROS 2 build files
+build/
+install/
+log/
+
+# Environment files
+.env
+
+# Colcon build artifacts
+**/colcon_build.rc
+**/colcon_command_prefix_setup_py.sh
+**/colcon_command_prefix_setup_py.sh.env
+**/install.log
+
+# Egg-info directories
+**/*.egg-info/
+
+# Temporary files
+*.swp
+*.swo
+.DS_Store
+
+#model
+src/ufld_lane_detection/ufld_lane_detection/models/*.pth
