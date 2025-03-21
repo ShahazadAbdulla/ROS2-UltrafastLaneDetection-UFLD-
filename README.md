@@ -35,7 +35,7 @@ this includes:
     torch, torchvision, numpy, opencv-python, Pillow, scipy
 ```
 
-## ✅ ROS 2 Dependencies
+### ✅ ROS 2 Dependencies
 
 This project is built for ROS 2 Humble. Install required packages:
 sudo apt update
@@ -50,7 +50,7 @@ src/
 ├── ufld_lane_detection/     # Lane detection logic + ROS node
 └── webcam_publisher/        # Publishes webcam frames
 
-##⬇️ Setup Instructions
+## ⬇️ Setup Instructions
 1. Clone the Repo
 
 git clone https://github.com/ShahazadAbdulla/Abaja-LKA.git
@@ -58,8 +58,8 @@ cd Abaja-LKA
 
 2. Download the Pretrained TuSimple Model
 
-## 📥 Model link:
-Google Drive - tusimple_18.pth
+### 📥 Model link:
+Google Drive - https://drive.google.com/file/d/1WCYyur5ZaWczH15ecmeDowrW30xcLrCn/view
 
 Place the model at:
 
