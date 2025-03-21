@@ -51,32 +51,28 @@ src/
 └── webcam_publisher/        # Publishes webcam frames
 
 ## ⬇️ Setup Instructions
-1. Clone the Repo
+0. Make a ros2 workspace:
+mkdir ufld_ws
+cd ufld_ws
 
-git clone https://github.com/ShahazadAbdulla/Abaja-LKA.git
-cd Abaja-LKA
+1. Clone the Repo:
+git clone https://github.com/ShahazadAbdulla/ros2-ultrafast-lane-detection.git
 
-2. Download the Pretrained TuSimple Model
-
+2. Download the Pretrained TuSimple Model:
 ### 📥 Model link:
 Google Drive - https://drive.google.com/file/d/1WCYyur5ZaWczH15ecmeDowrW30xcLrCn/view
 
 Place the model at:
-
 src/ufld_lane_detection/ufld_lane_detection/models/tusimple_18.pth
 
-3. Download a Test Video (Optional)
-
+3. Download a Test Video (Optional):
 You can use the video from this link to test the system:
-
-🎥 YouTube - Highway Lane Test Video
+https://www.youtube.com/watch?v=2CIxM7x-Clc
 
 Download it using yt-dlp:
-
 yt-dlp -f mp4 https://www.youtube.com/watch?v=2CIxM7x-Clc -o ~/Documents/road0.mp4
 
 Update lane_detection_node.py if your path is different:
-
 self.video_path = "/home/shadow0/Documents/road0.mp4"
 
 ### ⚙️ Build the ROS Workspace
@@ -86,12 +82,12 @@ colcon build
 source install/setup.bash
 
 ### 🚀 Running the Nodes
-1. Webcam Publisher (optional)
-
+1. Webcam Publisher (optional):
 ros2 run webcam_publisher webcam_publisher_node
 
 Publishes webcam images on /webcam_image.
-2. Lane Detection Node
+
+3. Lane Detection Node:
 
 ros2 run ufld_lane_detection lane_detection_node
 
